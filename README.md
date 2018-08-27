@@ -1,2 +1,2 @@
 # AutoType
-A fun tool in java to read and write from a file automatically
+Java based tool to access the given file and type it in the terminal automatically.
