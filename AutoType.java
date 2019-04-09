@@ -1,8 +1,9 @@
 import java.util.Scanner;
 import java.io.*;
+import java.util.Random;
 public class AutoType {
 	public String file;
-
+	Random r = new Random();
 	//Constructor for AutoType
 	public AutoType(){
 		file=getFile();
@@ -14,7 +15,7 @@ public class AutoType {
 		try{
 			for(int i=0;i<cline.length();i++){
 				System.out.print(cline.charAt(i));
-				Thread.sleep(100);
+				Thread.sleep(r.nextInt(200));
 			}
 			System.out.print("\n");
 		}catch(InterruptedException ex){
